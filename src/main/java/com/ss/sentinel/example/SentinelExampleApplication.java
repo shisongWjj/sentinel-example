@@ -20,7 +20,7 @@ public class SentinelExampleApplication {
     private static void initFlowRule(){
         List<FlowRule> flowRules = new ArrayList<>();
         FlowRule flowRule = new FlowRule();
-        flowRule.setCount(5);
+        flowRule.setCount(2);
         flowRule.setGrade(RuleConstant.FLOW_GRADE_QPS);
         flowRule.setResource("doTest");
         flowRules.add(flowRule);
