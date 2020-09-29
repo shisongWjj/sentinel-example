@@ -44,6 +44,10 @@ public class FlowRuleInitFunc implements InitFunc {
         FlowRuleManager.loadRules(flowRules);
     }
 
+    private void loadClusterConfig(){
+
+    }
+
     private void registerFlowRule(){
         ReadableDataSource<String,List<FlowRule>> nacosDataSource = new NacosDataSource<List<FlowRule>>(serverAddr, groupId, dataId, new Converter<String, List<FlowRule>>() {
             @Override
